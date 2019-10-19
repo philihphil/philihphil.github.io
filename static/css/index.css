@@ -1,0 +1,18 @@
+body{margin: 0;min-height: 1000px;list-style: none;}
+
+
+.head {position: fixed;width: 100%;overflow: hidden;}
+
+
+
+.icon-bar{height: 100px;width: 100px;background-color: #ff6d36;float: right;position: relative;cursor: pointer;}
+.icon-bar:hover {background-color: #f40}
+.icon-bar span,.icon-bar span:before,.icon-bar span:after{height: 5px;width: 30px;background-color: #fff;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+.icon-bar span:before {top: -7px;content: '';transition: transform 500ms;}
+.icon-bar span:after {top: 12px;content: '';transition: transform 500ms;}
+.icon-bar.active span{background: none}
+.icon-bar.active span:before{transition: transform 500ms;transform: rotate(45deg) scale(1, 1) skew(0deg, 0deg) translate(0, 0);top: 0px;left: 0}
+.icon-bar.active span:after{transition: transform 500ms;transform: rotate(135deg) scale(1, 1) skew(0deg, 0deg) translate(0, 0);top: 0px;left: 0}
+
+
+.menu{display: none;height: 100px;box-shadow: 10px 5px 0px rgba(0,0,0,0.2);background-color: #fff;box-sizing: border-box;margin:0 0px 5px 0px;border: 1px solid #000}

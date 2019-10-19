@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phil's first page</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="static/css/index.css">
+</head>
+<body>
+<div class="head">
+	<div class="icon-bar">
+		<a href="javascript:;">
+			<span></span>
+		</a>
+	</div>
+	<div style="height: 100px;background-color: #000;padding-right: 100px;"></div>
+	<div class="menu"></div>
+</div>
+
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript">
+	$(".icon-bar").click(function(){
+		$(".icon-bar").toggleClass("active");
+		$(".head .menu").toggle("1500ms");
+	})
+</script>
+</body>
+</html>
